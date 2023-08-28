@@ -23,8 +23,8 @@ const CartContainer = () => {
         <h2>accounting</h2>
       </header>
       <div>
-        {cartItems.map((items) => {
-          return <CartItem />;
+        {cartItems.map((item) => {
+          return <CartItem key={item.id} {...item} />;
         })}
       </div>
       <footer>
